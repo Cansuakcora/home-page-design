@@ -1,0 +1,26 @@
+// Bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "abstracts/reset";
+@import "abstracts/veriables";
+@import "abstracts/fonts";
+@import "abstracts/mixin";
+
+@import "base/media";
+@import "base/animations";
+@import "base/base";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/card";
+@import "components/form";
+@import "components/modal";
+@import "components/table";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/banner";
+
+@import "pages/landing";
+@import "pages/form-pages";
+

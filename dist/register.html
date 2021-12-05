@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <?php $site = $this->session->userdata('site_config'); ?>
+    <title><?php echo $site->name; ?> | Register</title> 
+
+    <!-- CS -->
+    <link rel="stylesheet" href="/file/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/file/css/app.min.css">
+    <!-- CS -->
+</head>
+
+<body>
+
+    <main class="main form-pages">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="form-pages__logos">
+                        <img src="/file/image/register-left-logo.png" class="form-pages__left-logo">
+                        <div class="form-pages__logo-title-pstn">
+                            <p class="form-pages__logo-title">Jose R. Reyes Memorial Medical Center <br> Department of Internal Medicine</p>
+                            <p class="form-pages__logo-subtitle">24th Postgraduate Course</p>
+                        </div>
+                        <img src="/file/image/register-right-logo.png" class="form-pages__left-logo">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6 form-pages__form-position">
+                    <div class="form-card">
+                        <h2 class="form-card__title">
+                             <?=$this->input->get("p",true)?'{'.$this->input->get("p").'}':'{register}'?> 
+                        </h2>
+                        <form action="" id="register_form" method="post">
+
+                            <!-- [FIRST NAME] -->
+                            <div class="form-group">
+                                <input class="form-control form-card__input" type="text" placeholder="First name"
+                                    id="first_name" name="first_name" maxlength="50" required>
+                            </div>
+                            <!-- [FIRST NAME] -->
+
+                            <!-- [LAST NAME] -->
+                            <div class="form-group">
+                                <input class="form-control form-card__input" type="text" placeholder="Last name"
+                                    id="last_name" name="last_name" maxlength="50" required>
+                            </div>
+                            <!-- [LAST NAME] -->
+
+                            <!-- [EMAIL] -->
+                            <div class="form-group">
+                                <input class="form-control form-card__input required" type="email" placeholder="Email Address"
+                                    id="email" name="email" value="<?=$this->session->userdata('email_remember'); ?>"
+                                    maxlength="50" required>
+                            </div>
+                            <!-- [EMAIL] -->
+
+                            <!-- [Mobile Number (optional)] -->
+                            <!--<div class="form-group">-->
+                            <!--    <input class="form-control form-card__input" type="text"-->
+                            <!--        placeholder="Mobile Number (optional)" id="extra1" name="extra1"-->
+                            <!--        onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="50">-->
+                            <!--</div>-->
+                            <!-- [Mobile Number (optional)] -->
+
+                            <!-- [Health Care Professional] -->
+                            <div class="form-group">
+                                <select class="form-control form-card__input" name="extra2" id="extra2"
+                                    required>
+                                    <option value="" selected disabled>Health Care Professional</option>
+                                    <option value="Nurse">Nurse</option>
+                                    <option value="Respiratory Therapist">Respiratory Therapist</option>
+                                    <option value="Junior Clerk">Junior Clerk</option>
+                                    <option value="Post-graduate Intern">Post-graduate Intern</option>
+                                    <option value="General Physicianv">General Physician</option>
+                                    <option value="Resident-in-Training">Resident-in-Training</option>
+                                    <option value="Fellow-in-Training">Fellow-in-Training</option>
+                                    <option value="Consultant">Consultant</option>
+                                    <option value="Other">Other Allied Medical Professional</option>
+                                </select>
+                            </div>
+                            <!-- [Health Care Professional] -->
+
+                            <!-- [Resident-in-Training - specify] -->
+                            <div class="form-group" id="resident" style="display: none;">
+                                <input class="form-control form-card__input" type="text"
+                                    placeholder="Please specify" id="extra3" name="extra3"
+                                    maxlength="50">
+                            </div>
+                            <!-- [Resident-in-Training - specify] -->
+                            
+                            <!-- [Fellow-in-Training - specify] -->
+                            <div class="form-group" id="felow" style="display: none;">
+                                <input class="form-control form-card__input" type="text"
+                                    placeholder="Please specify" id="extra4" name="extra4"
+                                    maxlength="50">
+                            </div>
+                            <!-- [Fellow-in-Training - specify] -->
+                            
+
+                            <!-- [Consultant] -->
+                            <div class="form-group" id="subspecialization" style="display: none;">
+                                <input class="form-control form-card__input" type="text"
+                                    placeholder="**Specialization (e.g. IM-Pulmo)" id="extra5" name="extra5"
+                                    maxlength="50">
+                            </div>
+                            <!-- [Consultant] -->
+
+                            <!-- [Other Allied Medical Professional ] -->
+                           <div class="form-group" id="other" style="display: none;">
+                                <input class="form-control form-card__input" type="text"
+                                    placeholder="Please specify" id="extra6" name="extra6"
+                                    maxlength="50">
+                            </div>
+                            <!-- [Other Allied Medical Professional ] -->
+
+                            <!-- [PRC Number] -->
+                            <div class="form-group" id="prc-number">
+                                <input class="form-control form-card__input" type="text" placeholder="PRC Number"
+                                    id="extra8" name="extra8" maxlength="50" required>
+                            </div>
+                            <!-- [PRC Number] -->
+
+                            <!-- [PMA Number (Optional)] -->
+                            <div class="form-group">
+                                <input class="form-control form-card__input" type="text"
+                                    placeholder="PMA Number (Optional)" id="extra9" name="extra9" maxlength="50" >
+                            </div>
+                            <!-- [PMA Number (Optional)] -->
+                            
+                             <!-- [Region of Practice] -->
+                            <div class="form-group">
+                                <select class="form-control form-card__input" name="extra10" id="extra10"
+                                    required>
+                                    <option value="" selected disabled>Region of Practice</option>
+                                    <option value="NCR">NCR (National Capital Region)</option>
+                                    <option value="CAR">CAR (Cordillera Administrative Region)
+                                    </option>
+                                    <option value="REGION I">REGION I (Ilocos Region)</option>
+                                    <option value="REGION II">REGION II (Cagayan Valley)</option>
+                                    <option value="REGION III">REGION III (Central Luzon)</option>
+                                    <option value="REGION IV-A">REGION IV-A (Calabarzon)</option>
+                                    <option value="REGION IV-B">REGION IV-B (Mimaropa)</option>
+                                    <option value="REGION V">REGION V (Bicol Region)</option>
+                                    <option value="REGION VI">REGION VI (Western Visayas)</option>
+                                    <option value="REGION VII">REGION VII (Central Visayas) </option>
+                                    <option value="REGION VIII">REGION VIII (Eastern Visayas)</option>
+                                    <option value="REGION IX">REGION IX (Zamboanga Peninsula)</option>
+                                    <option value="REGION X">REGION X (Northern Mindanao)</option>
+                                    <option value="REGION XI">REGION XI (Davao Region)</option>
+                                    <option value="REGION XII">REGION XII (Soccsksargen)</option>
+                                    <option value="REGION XIII">REGION XIII (Caraga Region)</option>
+                                    <option value="ARMM">ARMM (Autonomous Region In Muslim Mindanao)</option>
+                                </select>
+                            </div>
+                            <!-- [Region of Practice] -->
+
+
+                            <!-- [Affiliation ] -->
+                             <div class="form-group">
+                                <input class="form-control form-card__input" type="text"
+                                    placeholder="Hospital Affiliation (if any)" id="extra11" name="extra11" maxlength="50">
+                            </div>
+                            <!-- [Affiliation ] -->
+
+
+                            <!-- [CHECKBOXS] -->
+                            <div class="orm-card__checkboxs mt-xs">
+                                <!-- [FIRST CHECKBOX] -->
+                                <div class="mb-xxs form-group">
+                                    <label class="checkbox-label register-label" for="cb-first">
+                                        <input id="cb-first" name="cb-first" type="checkbox" class="click-checkbox-3"
+                                            value="1" required>
+                                        <span class="form-card__span"></span>
+                                        <span class="form-card__text">
+                                            I confirm that the above information are true and correct.
+                                        </span>
+                                    </label>
+                                </div>
+                                <!-- [FIRST CHECKBOX] -->
+                                
+                                 <div class="form-group">
+                                    <label class="checkbox-label register-label" for="cb-second">
+                                        <input id="cb-second" name="cb-second" type="checkbox" class="click-checkbox-3"
+                                            value="1" required>
+                                        <span class="form-card__span"></span>
+                                        <span class="form-card__text">
+                                           By registering, I hereby confirm that I authorize the host, the Department of Internal Medicine of Jose R. Reyes Memorial Medical Center, to collect, process, and store the information provided in this form as proof of my attendance. 
+                                        </span>
+                                    </label>
+                                </div>
+                                <!-- [FIRST CHECKBOX] -->
+
+                            </div>
+                            <!-- [CHECKBOXS] -->
+
+
+                            <!-- REGISTER FORM NAME -->
+                            <input type="hidden" id="form_name" name="form_name"
+                                value="musicandlyricsimjr" />
+                            <!-- REGISTER FROM NAME -->
+
+                            <!-- REGISTER PAGE NAME -->
+                            <input type="hidden" id="page" name="page"
+                                        value="<?=$this->input->get("p",true)?$this->input->get("p"):''?>" />
+                            <!-- REGISTER PAGE NAME -->
+
+                            <!-- [BUTTON] -->
+                            <div class="form-card__btn">
+                                <button class="btn-register">REGISTER</button>
+                                <p class="form-card__btn-text">By clicking the “REGISTER” button, you agree to receive information and updates on this website, and on future events.</p>
+                            </div>
+                            <!-- [BUTTON] -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="/file/js/jquery-3.6.0.min.js"></script>
+    <script src="/file/js/bootstrap.min.js"></script>
+    <!--<script src="/file/js/app/main.js"></script>-->
+
+    <script src="/assets/common/general/js/common.js?v=5.2.4"></script>
+    <script src="/assets/common/general/js/functions.js?v=5.1.6"></script>
+
+    <script>
+ 
+        
+         // Speciality değiştiğinde...
+        $("#extra2").change(function () {
+            if ($(this).val() == "Resident-in-Training") {
+                $("#resident").show("fast");
+                $("#extra3").val('');
+
+            } else {
+                $("#resident").hide("fast");
+                $("#extra3").val('null');
+            }
+        });
+        
+         // Speciality değiştiğinde...
+        $("#extra2").change(function () {
+            if ($(this).val() == "Fellow-in-Training") {
+                $("#felow").show("fast");
+                $("#extra4").val('');
+
+            } else {
+                $("#felow").hide("fast");
+                $("#extra4").val('null');
+            }
+        });
+        
+          // Speciality değiştiğinde...
+        $("#extra2").change(function () {
+            if ($(this).val() == "Consultant") {
+                $("#subspecialization").show("fast");
+                $("#extra5").val('');
+
+            } else {
+                $("#subspecialization").hide("fast");
+                $("#extra5").val('null');
+            }
+        });
+        
+           // Speciality değiştiğinde...
+        $("#extra2").change(function () {
+            if ($(this).val() == "Other") {
+                $("#other").show("fast");
+                $("#extra6").val('');
+
+            } else {
+                $("#other").hide("fast");
+                $("#extra6").val('null');
+            }
+        });
+        
+           // Speciality değiştiğinde...
+        $("#extra2").change(function () {
+            if ($(this).val() == "Junior Clerk" || $(this).val() == "Post-graduate Intern") {
+                $("#prc-number").hide("fast");
+                $("#extra8").val('null');
+                $("#extra8").attr('required', false);
+
+            } else {
+                $("#prc-number").show("fast");
+                $("#extra8").val('');
+                $("#extra8").attr('required', true);
+            }
+        });
+
+
+    
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+@font-face {
+     font-family: 'MontserratBold';
+     src: url('/file/css/fonts/Montserrat-Bold.eot');
+     src: local('/file/css/fonts/Montserrat-Bold'),
+          url('/file/css/fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Montserrat-Bold.woff2') format('woff2'),
+          url('/file/css/fonts/Montserrat-Bold.woff') format('woff'),
+          url('/file/css/fonts/Montserrat-Bold.ttf') format('truetype'),
+          url('/file/css/fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'MontserratMedium';
+     src: url('/file/css/fonts/Montserrat-Medium.eot');
+     src: local('/file/css/fonts/Montserrat-Medium'),
+          url('/file/css/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Montserrat-Medium.woff2') format('woff2'),
+          url('/file/css/fonts/Montserrat-Medium.woff') format('woff'),
+          url('/file/css/fonts/Montserrat-Medium.ttf') format('truetype'),
+          url('/file/css/fonts/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'MontserratRegular';
+     src: url('/file/css/fonts/Montserrat-Regular.eot');
+     src: local('/file/css/fonts/Montserrat-Regular'),
+          url('/file/css/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Montserrat-Regular.woff2') format('woff2'),
+          url('/file/css/fonts/Montserrat-Regular.woff') format('woff'),
+          url('/file/css/fonts/Montserrat-Regular.ttf') format('truetype'),
+          url('/file/css/fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+
+
+@font-face {
+     font-family: 'FSAlbertRegular';
+     src: url('/file/css/fonts/FSAlbert-Regular.eot');
+     src: local('/file/css/fonts/FSAlbert Regular'), local('/file/css/fonts/FSAlbert-Regular'),
+          url('/file/css/fonts/FSAlbert-Regular.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/FSAlbert-Regular.woff2') format('woff2'),
+          url('/file/css/fonts/FSAlbert-Regular.woff') format('woff'),
+          url('/file/css/fonts/FSAlbert-Regular.ttf') format('truetype'),
+          url('/file/css/fonts/FSAlbert-Regular.svg#FSAlbert-Regular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'FSAlbertBold';
+     src: url('/file/css/fonts/FSAlbert-Bold.eot');
+     src: local('/file/css/fonts/FSAlbert-Bold'),
+          url('/file/css/fonts/FSAlbert-Bold.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/FSAlbert-Bold.woff2') format('woff2'),
+          url('/file/css/fonts/FSAlbert-Bold.woff') format('woff'),
+          url('/file/css/fonts/FSAlbert-Bold.ttf') format('truetype'),
+          url('/file/css/fonts/FSAlbert-Bold.svg#FSAlbert-Bold') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'LatoBold';
+     src: url('/file/css/fonts/Lato-Bold.eot');
+     src: local('/file/css/fonts/Lato-Bold'),
+          url('/file/css/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Lato-Bold.woff2') format('woff2'),
+          url('/file/css/fonts/Lato-Bold.woff') format('woff'),
+          url('/file/css/fonts/Lato-Bold.ttf') format('truetype'),
+          url('/file/css/fonts/Lato-Bold.svg#Lato-Bold') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+@font-face {
+     font-family: 'LatoRegular';
+     src: url('/file/css/fonts/Lato-Regular.eot');
+     src: local('/file/css/fonts/Lato-Regular'),
+          url('/file/css/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/Lato-Regular.woff2') format('woff2'),
+          url('/file/css/fonts/Lato-Regular.woff') format('woff'),
+          url('/file/css/fonts/Lato-Regular.ttf') format('truetype'),
+          url('/file/css/fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'FSAlbertBoldItalic';
+     src: url('/file/css/fonts/FSAlbert-BoldItalic.eot');
+     src: local('/file/css/fonts/FSAlbert-BoldItalic'),
+          url('/file/css/fonts/FSAlbert-BoldItalic.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/FSAlbert-BoldItalic.woff2') format('woff2'),
+          url('/file/css/fonts/FSAlbert-BoldItalic.woff') format('woff'),
+          url('/file/css/fonts/FSAlbert-BoldItalic.ttf') format('truetype'),
+          url('/file/css/fonts/FSAlbert-BoldItalic.svg#FSAlbert-BoldItalic') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'FSAlbertLight';
+     src: url('/file/css/fonts/FSAlbert-Light.eot');
+     src: local('/file/css/fonts/FSAlbert Light'), local('/file/css/fonts/FSAlbert-Light'),
+          url('/file/css/fonts/FSAlbert-Light.eot?#iefix') format('embedded-opentype'),
+          url('/file/css/fonts/FSAlbert-Light.woff2') format('woff2'),
+          url('/file/css/fonts/FSAlbert-Light.woff') format('woff'),
+          url('/file/css/fonts/FSAlbert-Light.ttf') format('truetype'),
+          url('/file/css/fonts/FSAlbert-Light.svg#FSAlbert-Light') format('svg');
+     font-weight: 300;
+     font-style: normal;
+     font-display: swap;
+}

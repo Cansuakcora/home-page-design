@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <?php $site = $this->session->userdata('site_config'); ?>
+    <title><?php echo $site->name; ?> | Register</title> -->
+
+    <!-- CS -->
+    <link rel="stylesheet" href="/file/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/file/css/app.min.css">
+    <!-- CS -->
+</head>
+
+<body>
+
+    <main class="main form-pages">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="form-pages__logos">
+                        <img src="/file/image/register-left-logo.png" class="form-pages__left-logo">
+                        <div class="form-pages__logo-title-pstn">
+                            <p class="form-pages__logo-title">Jose R. Reyes Memorial Medical Center <br> Department of
+                                Internal Medicine</p>
+                            <p class="form-pages__logo-subtitle">24th Postgraduate Course</p>
+                        </div>
+                        <img src="/file/image/register-right-logo.png" class="form-pages__left-logo">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6 form-pages__form-position">
+                    <div class="form-card-login">
+                        <form action="" id="login_form" method="post">
+                            <!-- [EMAIL] -->
+                            <div class="form-group">
+                                <input class="form-control form-card-login__input" type="email" placeholder="Email address"
+                                    id=" email" name="email" required>
+                            </div>
+                            <!-- [EMAIL] -->
+
+                            <!-- HIDE PASWWORD -->
+                            <input type="hidden" name="password" value="pfizer" />
+                            <!-- HIDE PASWWORD -->
+
+                            <!-- [CHECKBOXS] -->
+                            <div class="orm-card__checkboxs mt-xs">
+                                <!-- [FIRST CHECKBOX] -->
+                                <div class="form-group">
+                                    <label class="login-label-width checkbox-label register-label mb-xxs" for="cb-first">
+                                        <input id="cb-first" name="cb-first" type="checkbox" class="click-checkbox-3"
+                                            value="1" required>
+                                        <span class="form-card__span"></span>
+                                        <span class="form-card__text">
+                                            I confirm that I am a healthcare and allied healthcare professional
+                                        </span>
+                                    </label>
+                                </div>
+                                <!-- [FIRST CHECKBOX] -->
+
+                            </div>
+                            <!-- [CHECKBOXS] -->
+
+
+
+                            <!-- [DESCRIPTION] -->
+                            <P class="form-card-login__description">
+                                By joining, I understand and acknowledge that the information disclosed herein as well
+                                as information obtained in the course of various JRRMMC programs and activities, all of
+                                which may include personal information, are collected, processed, and stored in an
+                                automated JRRMMC-managed database system and/or in the database system of its affiliates
+                                or authorized third parties, and which shall be used and administered solely by JRRMMC,
+                                and its said affiliate companies and authorized third parties in connection with the
+                                implementation and enhancements of JRRMMC’s various activities and programs. I give my
+                                consent to JRRMMC and its directors, officers, employees, advisers, agents and
+                                representatives’ (a) collection, processing, storage, and use of personal information;
+                                and (b) outsourcing of the collection, processing, storage, and use of personal
+                                information to service providers whether within or outside the Philippines. The
+                                foregoing constitute my express consent under the applicable confidentiality and data
+                                privacy law of the Philippines and other jurisdictions, and agree to hold JRRMMC and
+                                relevant parties free and harmless from any all liabilities, claims, damages and suits
+                                of whatever kind and nature that may arise in connection with the implementation and
+                                compliance with the authorization which I confers herein. My express consent shall
+                                continue for the duration of JRRMMC’s various activities and programs. The foregoing is
+                                without prejudice to my rights to reasonable access to, upon demand, and correction of
+                                my personal information, as well as my right to lodge a complaint before the National
+                                Privacy Commission, under Section 16 of the Data Privacy Act. I likewise agree that my
+                                personal information may be disclosed to any JRRMMC-authorized affiliates and third
+                                parties for any legitimate purpose. <br><br>
+                                For these purposed, JRRMMC and its authorized
+                                affiliates or authorized third parties shall store personal information , as defined
+                                under Section 3 (g) of the Data Privacy Act, within JRRMMC’s applicable retention
+                                schedules, but without prejudice to your right to request for its deletion. Finally, you
+                                hereby confirm and provide consent for JRRMMC, its employees, affiliates, and/or
+                                authorized third parties to continue to send notifications on company-initiated
+                                activities, announcements, invites, and contact you through the same. We respect your
+                                privacy and will abide by the prevailing laws and regulations. You will at any time have
+                                the right to access your information; you can request that your information on the
+                                JRRMMC database be amended or removed at any time; you can request to not receive
+                                information by email, electronic or other means.<br><br>
+                                By being sponsored to a virtual
+                                symposium, convention, or continuing professional development event, you shall transfer
+                                the knowledge that you received from the meeting to the medical community in your own
+                                capacity, as required under the Department of Health Administrative Order No. 2015-0053.
+                            </P>
+                            <!-- [DESCRIPTION] -->
+
+                            <!-- [BUTTON] -->
+                            <div class="d-flex justify-content-center align-items-center mt-smx">
+                                <button class="btn-register">Login</button>
+                            </div>
+                            <!-- [BUTTON] -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="/file/js/jquery-3.6.0.min.js"></script>
+    <script src="/file/js/bootstrap.min.js"></script>
+    <script src="/file/js/app/main.js"></script>
+
+    <script src="/assets/common/general/js/common.js?v=5.2.4"></script>
+    <script src="/assets/common/general/js/functions.js?v=5.1.6"></script>
+
+</body>
+
+</html>

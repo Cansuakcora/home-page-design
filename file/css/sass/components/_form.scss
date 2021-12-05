@@ -1,0 +1,521 @@
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+
+    small {
+        font-size: 12px;
+        color: rgb(253, 37, 37);
+        font-family: $ff-albert-bold;
+        position: absolute;
+        top: -17px;
+    }
+
+    &__specify {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 315px;
+        width: 100%;
+        margin: 0 auto .8rem auto;
+
+        @include media-min1400 {
+            max-width: 320px;
+        }
+
+        @include media-min1600 {
+            max-width: 335px;
+        }
+
+    }
+}
+
+.form-card {
+    max-width: 440px;
+    width: 100%;
+    background-color: $color-white;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.14);
+    margin-top: 5rem;
+
+    @include media-min1400 {
+        max-width: 460px;
+    }
+
+    @include media-min1600 {
+        max-width: 490px;
+    }
+
+    @include media767 {
+        margin-top: 3rem;
+    }
+
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        margin: 2rem 0 4rem 0;
+
+        @include media991 {
+            margin: 5rem 0 2rem 0;
+        }
+    }
+
+    &__title {
+        font-size: 2em;
+        color: $color-purple-opacity3;
+        font-family: 'MontserratBold', sans-serif;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    &__input {
+        max-width: 315px;
+        width: 100%;
+        height: 40px;
+        background-color: $color-gray-light-4;
+        border-radius: 7px;
+        font-size: 16px;
+        color: $color-black-6;
+        appearance: auto;
+        padding-left: 1rem;
+        border: none;
+        font-family: sans-serif;
+        margin: 0 auto;
+
+        &::-ms-expand {
+            display: none;
+        }
+
+        @include media-min1600 {
+            max-width: 335px;
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        min-height: 162px !important;
+        padding: 12px 12px;
+        border-radius: 7px;
+        font-size: 1em;
+        color: $color-black-6;
+        background-color: $color-gray-light-2;
+        resize: vertical;
+    }
+
+    select {
+        // text-indent: 17px;
+
+        @media screen and (-ms-high-contrast: active),
+        (-ms-high-contrast: none) {
+            padding-left: 1.8rem;
+        }
+
+        @-moz-document url-prefix() {
+            padding-left: 0rem;
+            text-indent: 14px;
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            padding-left: 0rem;
+            text-indent: 32px;
+        }
+    }
+
+    &__checkboxs {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__specify-input {
+        max-width: 195px;
+        border-top: none;
+        background-color: #fff;
+        border-bottom: 2px solid #333;
+        border-radius: 0;
+        margin: 0;
+        height: 30px;
+        padding-left: .6rem;
+
+        @include  media360 {
+            max-width: 180px;
+        }
+    }
+
+    &__affilation-input {
+        max-width: 225px;
+        border-top: none;
+        background-color: #fff;
+        border-bottom: 2px solid #333;
+        border-radius: 0;
+        margin: 0;
+        height: 30px;
+        padding-left: .6rem;
+
+        @include  media360 {
+            max-width: 210px;
+        }
+    }
+
+    &__text {
+        font-size: 12px;
+        color: $color-black-5;
+        margin-left: 1.5rem;
+        display: block;
+        max-width: 328px;
+        width: 100%;
+        font-family: 'MontserratRegular', sans-serif;
+
+        @include media375 {
+            max-width: 284px;
+        }
+
+        a {
+            color: $color-primary;
+            // text-decoration: underline;
+
+            &:hover {
+                color: $color-primary;
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    &__description {
+        font-size: 10px;
+        color: $color-black-6;
+        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 315px;
+        margin: 0 auto;
+
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__btn-text {
+        font-size: 9px;
+        width: 100%;
+        max-width: 290px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: .4rem;
+        font-family: 'MontserratRegular', sans-serif;
+    }
+}
+
+.form-card-login {
+    max-width: 460px;
+    width: 100%;
+    background-color: $color-white;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.14);
+    margin-top: 5rem;
+
+    @include media-min1400 {
+        max-width: 485px;
+    }
+
+    @include media-min1600 {
+        max-width: 520px;
+    }
+
+    @include media767 {
+        margin-top: 3rem;
+    }
+
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        margin: 2rem 0 4rem 0;
+
+        @include media991 {
+            margin: 5rem 0 2rem 0;
+        }
+    }
+
+    &__title {
+        font-size: 2em;
+        color: $color-purple-opacity3;
+        font-family: 'MontserratBold', sans-serif;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    &__input {
+        max-width: 350px;
+        width: 100%;
+        height: 40px;
+        background-color: $color-gray-light-4;
+        border-radius: 7px;
+        font-size: 16px;
+        color: $color-black-6;
+        appearance: auto;
+        padding-left: 1rem;
+        border: none;
+        font-family: sans-serif;
+        margin: 2rem auto 0 auto;
+
+        &::-ms-expand {
+            display: none;
+        }
+
+        @include media-min1600 {
+            max-width: 360px;
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        min-height: 162px !important;
+        padding: 12px 12px;
+        border-radius: 7px;
+        font-size: 1em;
+        color: $color-black-6;
+        background-color: $color-gray-light-2;
+        resize: vertical;
+    }
+
+    select {
+        // text-indent: 17px;
+
+        @media screen and (-ms-high-contrast: active),
+        (-ms-high-contrast: none) {
+            padding-left: 1.8rem;
+        }
+
+        @-moz-document url-prefix() {
+            padding-left: 0rem;
+            text-indent: 14px;
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            padding-left: 0rem;
+            text-indent: 32px;
+        }
+    }
+
+    &__checkboxs {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__specify-input {
+        max-width: 195px;
+        border-top: none;
+        background-color: #fff;
+        border-bottom: 2px solid #333;
+        border-radius: 0;
+        margin: 0;
+        height: 30px;
+        padding-left: .6rem;
+    }
+
+    &__affilation-input {
+        max-width: 225px;
+        border-top: none;
+        background-color: #fff;
+        border-bottom: 2px solid #333;
+        border-radius: 0;
+        margin: 0;
+        height: 30px;
+        padding-left: .6rem;
+    }
+
+    &__text {
+        font-size: 12px;
+        color: $color-black-5;
+        margin-left: 1.5rem;
+        display: block;
+        max-width: 328px;
+        width: 100%;
+        font-family: 'MontserratRegular', sans-serif;
+
+        @include media375 {
+            max-width: 284px;
+        }
+
+        a {
+            color: $color-primary;
+            // text-decoration: underline;
+
+            &:hover {
+                color: $color-primary;
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    &__description {
+        font-size: 9.5px;
+        color: $color-black-6;
+        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+
+        @include media-min1600{
+            max-width: 360px;   
+        }
+
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__btn-text {
+        font-size: 9px;
+        width: 100%;
+        max-width: 290px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: .4rem;
+        font-family: 'MontserratRegular', sans-serif;
+    }
+}
+
+/* [ REGISTER CHECKBOX  START ] */
+.checkbox-label {
+    // display: inline;
+    position: relative;
+    cursor: pointer;
+    font-size: 13px;
+    // line-height: 18px;
+    // height: 18px;
+    // width: 18px;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 321px;
+    margin: 0 auto 0 auto;
+
+    @include media-min1600 {
+        max-width: 338px;
+    }
+}
+
+.login-label-width{
+    width: 100%;
+    max-width: 350px !important;
+
+    @include media-min1600{
+        max-width: 360px !important;
+    }
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .form-card__span {
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    height: 17px;
+    width: 17px;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 1px solid #707070;
+}
+
+.checkbox-label input:checked~.form-card__span {
+    background-color: $color-pink2;
+    border-radius: 4px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    border: 1px solid #707070;
+}
+
+.checkbox-label .form-card__span::after {
+    position: absolute;
+    content: "";
+    left: 8px;
+    top: 8px;
+    height: 0px;
+    width: 0px;
+    border-radius: 4px;
+    border: solid $color-secondary;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.checkbox-label input:checked~.form-card__span::after {
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+    left: 6px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid $color-white;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/* For Ripple Effect */
+.checkbox-label .form-card__span::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    border: 2px solid $color-white;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.checkbox-label input:checked~.form-card__span::before {
+    left: -3px;
+    top: -3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    opacity: 0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+/* [ REGISTER CHECKBOX  END ] */

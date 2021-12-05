@@ -1,0 +1,105 @@
+.banner {
+    position: relative;
+
+    padding: 6rem 0;
+
+    @include media766{
+        padding: 4rem 0 6rem 0;
+    }
+
+    .container {
+        
+        @include media-min1600 {
+            max-width: 1260px;
+        }
+
+        @include media-min1800 {
+            max-width: 1400px;
+        }
+    }
+
+    &__title {
+        color: $color-white;
+        font-family: 'MontserratBold', sans-serif;
+        line-height: 3rem;
+        font-size: 40px;
+
+        @include media766{
+            font-size: 26px;
+            text-align: center;
+            line-height: 2.5rem;
+        }
+    }
+
+    &__info {
+        color: $color-white;
+        font-size: 32px;
+        line-height: 2.5rem;
+        margin-top: 3.4rem;
+
+        @include media766{
+            font-size: 17px;
+            line-height: 2rem;
+            margin-top: 1.4rem;
+            text-align: center;
+        }
+
+        span {
+            font-family: 'MontserratBold', sans-serif;
+            display: block;
+        }
+    }
+
+    &__register-btn {
+        color: $color-secondary;
+        background-color: $color-gray-light;
+        padding: 10px;
+        width: 100%;
+        max-width: 315px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'MontserratBold', sans-serif;
+        font-size: 25px;
+        border-radius: 10px;
+        border: 3px solid $color-pink;
+        margin-top: 3rem;
+        margin-bottom: 1.3rem;
+        transition: all .5s;
+
+        &:hover {
+            transform: scale(1.05);
+            color: $color-secondary;
+        }
+
+        @include media766{
+            margin: 3rem auto 1.3rem auto;
+        }
+    }
+
+    &__login-btn {
+        color: $color-white;
+        background-color: $color-pink;
+        padding: 10px;
+        width: 100%;
+        max-width: 315px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'MontserratBold', sans-serif;
+        font-size: 25px;
+        border-radius: 10px;
+        border: 3px solid $color-pink;
+        transition: all .5s;
+
+        &:hover {
+            transform: scale(1.05);
+            color: $color-white;
+        }
+
+        @include media766{
+            margin: 1rem auto 1.3rem auto;
+        }
+    }
+
+}

@@ -1,0 +1,91 @@
+.modal {
+    // background-color: #4b4b4b;
+
+    &.show {
+
+        .modal-dialog {
+            // position: absolute;
+            // left: 50%;
+            // top: 0px;
+            // transform: translate(-50%, 0px);
+
+            @include media600 {
+                margin: 0;
+            }
+        }
+    }
+
+    .modal-dialog {
+        max-width: 836px;
+        width: 100%;
+
+        .modal-content {
+            border-radius: 27px;
+            background-color: $color-white;
+            padding: 10px;
+
+            .modal-header {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                position: relative;
+
+                @include media600 {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                .close {
+                    position: absolute;
+                    right: 6px;
+                    top: -14px;
+                    background-color: transparent;
+                    font-size: 45px;
+                    font-weight: 500;
+                    color: #4b4b4b;
+                }
+
+                &__img {
+                    width: 130px;
+                    height: 130px;
+                    margin-right: 20px;
+
+                    @include media600 {
+                        margin-right: 0;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                &__name {
+                    font-size: 1.5em;
+                    color: $color-claret;
+                    font-family: $ff-albert-bold;
+                    margin-bottom: 1rem;
+
+                    @include media600 {
+                        text-align: center;
+                    }
+                }
+
+                &__detail {
+                    font-size: 1.3em;
+                    color: $color-claret;
+
+                    @include media600 {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .modal-body {
+
+                &__text {
+                    font-size: 1.3em;
+                    color: $color-claret;
+                    margin-bottom: 1rem;
+                }
+            }
+
+        }
+    }
+}

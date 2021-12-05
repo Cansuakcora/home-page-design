@@ -1,0 +1,205 @@
+.btn-animation-1 {
+
+    &:hover {
+        animation: scale .5s ease-in-out;
+    }
+}
+
+.btn-animation-2 {
+
+    &:hover {
+        animation-name: heartBeat;
+        animation: heartBeat 0.66s alternate;
+        animation-iteration-count: 2;
+    }
+}
+
+
+.btn-animation-nope {
+
+    &:hover {
+        animation: nope 1s ease-in;
+    }
+}
+
+
+.btn-register {
+    font-size: 22px;
+    color: #fff;
+    background-color: #be207c;
+    text-align: center;
+    border-radius: 7px;
+    max-width: 210px;
+    width: 100%;
+    padding: 11px 5px;
+    display: table;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+
+    &:hover {
+        color: $color-white;
+        transform: scale(.95);
+    }
+}
+
+
+.btn-go-home {
+    font-size: 1.3em;
+    color: $color-white;
+    background-color: $color-primary;
+    font-family: $ff-albert-bold;
+    text-align: center;
+    border-radius: 35px;
+    max-width: 282px;
+    width: 100%;
+    padding: 22px 5px;
+    margin: 0 auto;
+    display: table;
+    transition: all .5s linear;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-secondary;
+        box-shadow: 0px 0px 40px #6C004184;
+    }
+}
+
+.btn-banner-calendar {
+    font-size: 1.5em !important;
+    color: $color-white !important;
+    background-color: $color-pink2 !important;
+    // text-transform: capitalize;
+    font-family: $ff-albert-bold;
+    text-align: center !important;
+    border-radius: 25px !important;
+    max-width: 234px !important;
+    width: 100% !important;
+    padding: 10px 5px !important;
+    display: table;
+    transition: all .5s linear;
+
+    &:hover {
+        color: $color-white !important;
+        background-color: rgba($color-secondary, 0.50) !important;
+        box-shadow: 0px 0px 40px #6C004184;
+    }
+}
+
+.btn-calendar-thankyou {
+    font-size: 13px !important;
+    color: $color-white !important;
+    background-color:$color-pink2!important;
+    text-transform: uppercase;
+    font-family: 'MontserratMedium',sans-serif !important;
+    text-align: center !important;
+    border-radius: 25px !important;
+    max-width: 160px !important;
+    width: 100% !important;
+    padding: 10px 5px !important;
+
+    transition: all .5s linear;
+
+    &:hover {
+        color: $color-white !important;
+        background-color:$color-pink2 !important;
+        transform: scale(1.05);
+    }
+}
+
+.btn-calendar-card {
+    font-size: 22px !important;
+    color: $color-primary !important;
+    font-family: $ff-albert-bold !important;
+    text-align: center !important;
+    border: 2px solid $color-primary !important;
+    border-radius: 25px !important;
+    max-width: 234px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0.55em 5px !important;
+    display: table !important;
+    transition: all .5s linear;
+
+    &:hover {
+        color: $color-white !important;
+        border-color: $color-secondary !important;
+        background-color: $color-secondary !important;
+    }
+}
+
+.btn-clart {
+    font-size: 16px;
+    color:$color-pink2;
+    background-color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid $color-pink2;
+    border-radius: 16px;
+    width: 135px;
+    display: block;
+    padding: 8px 2px;
+
+    transition: all .5s linear;
+
+    &:hover {
+        color: $color-white;
+        background-color:$color-pink2;
+    }
+}
+
+.btn-explore-thank {
+    font-size: 17px;
+    color: $color-white;
+    background-color: $color-primary;
+    text-transform: capitalize;
+    font-family: $ff-albert-bold;
+    text-align: center;
+    border-radius: 25px;
+    max-width: 318px;
+    width: 100%;
+    padding: 12px 5px;
+
+    transition: all .5s linear;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-secondary;
+    }
+}
+
+.btn-save {
+    font-size: 17px;
+    color: $color-white;
+    background-color: $color-primary;
+    font-family: $ff-albert-bold;
+    text-align: center;
+    border-radius: 25px;
+    width: 184px;
+    padding: 12px 5px;
+    margin: 0 auto;
+    outline: 0;
+    cursor: pointer;
+
+    transition: all .5s linear;
+
+    &:hover {
+        transform: scale(0.95);
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:disabled {
+        background-color: $color-button-disabled;
+        cursor: no-drop;
+    }
+}
+
+.addeventatc .addeventatc_icon {
+    display: none !important;
+}
+
+.btn-mobile-purple{
+    background-color: $color-purple-opacity2 !important;
+}

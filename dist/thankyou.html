@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <?php $site = $this->session->userdata('site_config'); ?>
+    <title><?php echo $site->name; ?> | Thank you</title> -->
+
+    <!-- CS -->
+    <link rel="stylesheet" href="/file/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/file/css/app.min.css">
+    <!-- CS -->
+</head>
+
+<body>
+    <main class="main form-pages-thankyou">
+        <div class="container">
+            <div class="pb-md-5">
+                <div class="form-pages-thankyou__pstn">
+                    <div class="card-thakyou mb-4 mr-lg-5">
+                        <img src="/file/image/icons/icon-check-green.png" alt="Icon" class="card-thakyou__icon">
+                        <h2 class="card-thakyou__title">
+                            THANK YOU FOR <br> REGISTERING
+                        </h2>
+                        <p class="card-thakyou__desciription">
+                            You have successfully registered <br> for the event
+                        </p>
+                        <div class="card-thakyou__calendar-pstn">
+                            <p class="card-thakyou__calendar-date">11 September</p>
+                            <a id="addeventatc"  class="btn-calendar-thankyou addeventatc" style="color:#fff !important;" data-id="<?=project_config('add_to_calendar_unique_id') ?>" href="https://www.addevent.com/event/<?=project_config('add_to_calendar_unique_id') ?>" target="_blank" rel="nofollow">ADD TO CALENDAR</a>
+                            <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer>
+                            </script>
+                        </div>
+
+                        <div class="card-thakyou__calendar-pstn">
+                            <p class="card-thakyou__calendar-date">11 September</p>
+                            <a id="addeventatc"  class="btn-calendar-thankyou addeventatc" style="color:#fff !important;" data-id="<?=project_config('add_to_calendar_unique_id') ?>" href="https://www.addevent.com/event/<?=project_config('add_to_calendar_unique_id') ?>" target="_blank" rel="nofollow">ADD TO CALENDAR</a>
+                            <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer>
+                            </script>
+                        </div>
+
+                        <div class="card-thakyou__calendar-pstn">
+                            <p class="card-thakyou__calendar-date">11 September</p>
+                            <a id="addeventatc"  class="btn-calendar-thankyou addeventatc" style="color:#fff !important;" data-id="<?=project_config('add_to_calendar_unique_id') ?>" href="https://www.addevent.com/event/<?=project_config('add_to_calendar_unique_id') ?>" target="_blank" rel="nofollow">ADD TO CALENDAR</a>
+                            <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer>
+                            </script>
+                        </div>
+                        <div class="card-thakyou__buttons">
+                            <a href="/landing" class="btn-clart m-2">GO TO HOME</a>
+                            <a href="/login" class="btn-clart m-2">GO TO LOGIN</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="/file/js/jquery-3.6.0.min.js"></script>
+    <script src="/file/js/bootstrap.min.js"></script>
+    <script src="/file/js/app/main.js"></script>
+</body>
+
+</html>
